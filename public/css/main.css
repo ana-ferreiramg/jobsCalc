@@ -81,7 +81,7 @@ a {
 
 /* basic classes */
 .container {
-  width: min(1440px, 90vw);
+  width: min(90vw, 1440px);
   margin: 0 auto;
 }
 
@@ -109,4 +109,14 @@ a {
 
 .flex {
   display: flex;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .flex-direction {
+    flex-direction: row;
+  }
 }

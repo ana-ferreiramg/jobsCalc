@@ -1,10 +1,7 @@
 aside.card {
-  width: 22rem;
-
-  margin-left: 8rem;
-
+  width: 90vw;
+  margin-top: 5rem;
   text-align: center;
-
   padding: 2.5rem 3.375rem;
 }
 
@@ -14,7 +11,6 @@ aside > img {
 
 aside p {
   margin-bottom: 1.75rem;
-
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
@@ -30,4 +26,12 @@ aside .button + .button {
   padding: 0;
   width: 3rem;
   height: 3rem;
+}
+
+@media (min-width: 800px) {
+  aside.card {
+    margin-left: 8rem;
+    margin-top: 0;
+    width: 22rem;
+  }
 }
