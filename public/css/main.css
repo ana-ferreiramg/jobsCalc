@@ -82,7 +82,7 @@ a {
 /* basic classes */
 .container {
   width: min(90vw, 1440px);
-  margin: 0 auto;
+  margin: 0 auto 5rem;
 }
 
 .sr-only {

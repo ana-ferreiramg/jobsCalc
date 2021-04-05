@@ -9,7 +9,7 @@ aside.card {
   border: 1px solid #e1e3e6;
   border-radius: 0.313rem;
 
-  width: 22rem;
+  width: 100%;
   max-height: 80vh;
 
   margin-bottom: 2rem;
@@ -50,12 +50,20 @@ aside p {
 
 main {
   flex: 1;
-  margin-bottom: 5rem;
+}
+
+main form .input-group.profile-form .input-wrapper + .input-wrapper {
+  margin: 1rem 0 0 0;
 }
 
 @media (min-width: 800px) {
   aside.card {
     margin-right: 5rem;
     margin-bottom: 0;
+    width: 22rem;
+  }
+
+  main form .input-group.profile-form .input-wrapper + .input-wrapper {
+    margin: 0 0 0 1.5rem;
   }
 }
