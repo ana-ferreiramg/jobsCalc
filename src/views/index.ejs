@@ -32,11 +32,13 @@
           <img id="logo" src="/img/logo.svg" alt="Logo" />
           <span id="notification">
             <img src="/img/alert-octagon.svg" alt="Alerta" />
-            Você tem 2 horas livres no seu dia
+
+            <%= freeHours <= 0 ? 'Você não tem horas livres' : freeHours === 1 ? 'Você tem 1 hora livre no seu dia' : `Você tem ${freeHours} horas
+            livres no seu dia` %>
           </span>
           <a href="/profile" id="avatar-profile">
-            <p>Jakeliny<span>Ver perfil</span></p>
-            <img src="https://avatars.githubusercontent.com/u/17316392?s=460&u=6912a91a70bc89745a2079fdcdad3bc3ce370f13&v=4" />
+            <p><%= profile.name %> <span>Ver perfil</span></p>
+            <img src="<%= profile.avatar %> " />
           </a>
         </section>
 
@@ -47,15 +49,15 @@
 
           <div class="info">
             <div class="total">
-              <strong><%= jobs.length %></strong>
+              <strong><%= statusCount.total %></strong>
               Projetos ao total
             </div>
             <div class="in-progress">
-              <strong><%= (jobs.filter((job) => job.status === 'progress')).length %></strong>
+              <strong><%= statusCount.progress %></strong>
               Em andamento
             </div>
             <div class="finished">
-              <strong><%= (jobs.filter((job) => job.status === 'done')).length %></strong>
+              <strong><%= statusCount.done %></strong>
               Encerrados
             </div>
           </div>

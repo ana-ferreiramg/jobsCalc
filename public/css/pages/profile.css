@@ -52,8 +52,12 @@ main {
   flex: 1;
 }
 
-main form .input-group.profile-form .input-wrapper + .input-wrapper {
+main form fieldset:first-child .input-group .input-wrapper + .input-wrapper {
   margin: 1rem 0 0 0;
+}
+
+main form fieldset + fieldset .input-group {
+  flex-direction: row;
 }
 
 @media (min-width: 800px) {
@@ -63,7 +67,7 @@ main form .input-group.profile-form .input-wrapper + .input-wrapper {
     width: 22rem;
   }
 
-  main form .input-group.profile-form .input-wrapper + .input-wrapper {
+  main form fieldset:first-child .input-group .input-wrapper + .input-wrapper {
     margin: 0 0 0 1.5rem;
   }
 }
