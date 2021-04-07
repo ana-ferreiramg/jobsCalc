@@ -37,14 +37,16 @@ const initDb = {
         monthly_budget,
         hours_per_day,
         days_per_week,
-        vacation_per_year
+        vacation_per_year,
+        value_hour
       ) VALUES (
         "Ana Ferreira",
         "https://i.pinimg.com/564x/d6/eb/00/d6eb00f69daea2fb862d90c0c6cf8f36.jpg",
         3000,
         5,
         5,
-        4
+        4,
+        80
       );`,
     );
 
