@@ -9,7 +9,7 @@ server.set('view engine', 'ejs');
 // mudar a localização da pasta views
 server.set('views', path.join(__dirname, 'views'));
 
-// habilitar arquivos estáticos /css,  /img, /js
+// habilitar arquivos estáticos /css, /img, /js
 server.use(express.static('public'));
 
 // usar req.body
